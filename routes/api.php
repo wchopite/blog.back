@@ -21,6 +21,7 @@ use App\Gender;
 Route::group(['prefix' => 'v1'], function() {
 
   Route::resource('genders', 'GendersController');
+  Route::resource('artists', 'ArtistsController');
 });
 
 // Route::group(['prefix'=>'v1'], function(){
