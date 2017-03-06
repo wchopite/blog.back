@@ -73,10 +73,10 @@ class GendersController extends Controller {
 
     $gender = Gender::find($id);
 
-    if(is_null($gender)){
+    if(is_null($gender))
       return response()->json('Registro no encontrado', 404);
-    }
     else {
+			
       $gender->delete();
       return response()->json("Registro eliminado satisfactoriamente");
     }
